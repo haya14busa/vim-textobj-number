@@ -40,7 +40,7 @@ set cpo&vim
 
 call textobj#user#plugin('number', {
 \   '-': {
-\     'pattern': '\d\+',
+\     'pattern': '\%(\<[[:digit:]]\+\%(\.[[:digit:]]\+\)\=\%([Ee][[:digit:]]\+\)\=\>\|\<0[xXbBoOdD][[:xdigit:]]\+\>\)',
 \     'select': ['an', 'in'],
 \   }
 \ })
